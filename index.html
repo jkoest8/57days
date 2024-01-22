@@ -4,10 +4,15 @@
     <title>Date Calculation</title>
 </head>
 <body>
-    <h2>Date 57 Days Ago</h2>
-    <div id="date57DaysAgo"></div>
+    <h2>Find the Date 57 Days Before a Selected Date</h2>
+    <label for="selectedDate">Select a Date:</label>
+    <input type="date" id="selectedDate" onchange="calculateDate()">
+
+    <div>
+        <h3>Date 57 Days Ago:</h3>
+        <div id="date57DaysAgo"></div>
+    </div>
 
     <script src="dateCalculation.js"></script>
 </body>
 </html>
-

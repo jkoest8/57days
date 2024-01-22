@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Calculation</title>
+</head>
+<body>
+    <h2>Date 57 Days Ago</h2>
+    <div id="date57DaysAgo"></div>
+
+    <script src="dateCalculation.js"></script>
+</body>
+</html>
+document.addEventListener('DOMContentLoaded', function() {
+    var currentDate = new Date();
+    currentDate.setDate(currentDate.getDate() - 57); // Subtracting 57 days
+
+    var date57DaysAgo = currentDate.toDateString(); // Formatting to a readable string
+
+    document.getElementById("date57DaysAgo").innerHTML = date57DaysAgo;
+});
